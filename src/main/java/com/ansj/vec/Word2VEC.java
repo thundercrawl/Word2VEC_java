@@ -205,6 +205,7 @@ public class Word2VEC {
 	public Set<WordEntry> distance(String queryWord) {
 
 		float[] center = wordMap.get(queryWord);
+		System.out.println("word map:"+center);
 		if (center == null) {
 			return Collections.emptySet();
 		}
