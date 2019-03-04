@@ -16,6 +16,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 import com.ansj.vec.util.MapCount;
+import com.bg.monitor.JVMMonitor;
 import com.ansj.vec.domain.HiddenNeuron;
 import com.ansj.vec.domain.Neuron;
 import com.ansj.vec.domain.WordNeuron;
@@ -283,6 +284,7 @@ public class Learn {
       wordMap.put(element.getKey(), new WordNeuron(element.getKey(),
           (double) element.getValue() / mc.size(), layerSize));
     }
+    JVMMonitor.printSystemMemory();
   }
 
   /**

@@ -1,3 +1,4 @@
+.class
 .classpath
 .project
 .settings/
@@ -5,3 +6,4 @@
 /bin
 .git
 library/
+target/
